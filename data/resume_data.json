@@ -1,0 +1,167 @@
+{
+  "header": {
+    "logo": "Ally",
+    "menu": [
+      {
+        "label": "Home",
+        "icon": "bx bx-home-alt",
+        "link": "#home"
+      },
+      {
+        "label": "Socials",
+        "icon": "bx bxl-meta",
+        "link": "#social"
+      },
+      {
+        "label": "Profile",
+        "icon": "bx bx-user",
+        "link": "#profile"
+      },
+      {
+        "label": "Education",
+        "icon": "bx bx-book",
+        "link": "#education"
+      },
+      {
+        "label": "Skills",
+        "icon": "bx bx-receipt",
+        "link": "#skills"
+      },
+      {
+        "label": "Experience",
+        "icon": "bx bx-briefcase-alt",
+        "link": "#experience"
+      },
+      {
+        "label": "Certificates",
+        "icon": "bx bx-award",
+        "link": "#certificates"
+      },
+      {
+        "label": "References",
+        "icon": "bx bx-link-external",
+        "link": "#references"
+      }
+    ]
+  },
+  "main": {
+    "profile": {
+      "name": "ALLY HUSSEIN BAUBOOA",
+      "profession": "Full Stack Developer",
+      "image": "static/images/ProfileImage.png",
+      "address": "Mosque Road - Goodlands - Mauritius",
+      "email": "allyhusseinbaubooa@gmail.com",
+      "phone": "+230 58163182"
+    },
+    "socials": [
+      {
+        "icon": "bx bxl-linkedin-square",
+        "network": "LinkedIn",
+        "url": "https://www.linkedin.com/in/ally-hussein-baubooa-63a87b244/"
+      },
+      {
+        "icon": "bx bxl-github",
+        "network": "GitHub",
+        "url": "https://github.com/allybaubooa"
+      },
+      {
+        "icon": "bx bxl-facebook",
+        "network": "Facebook",
+        "url": "https://www.facebook.com/allyhussein.baubooa/"
+      }
+    ],
+    "profile_description": "I am a hardworking and dedicated DevOps professional, proficient in Python, HTML, CSS, and JavaScript.\n With a strong focus on organization and a proactive, punctual approach, I thrive in a team-oriented environment.",
+    "education": [
+      {
+        "degree": "Computer Science with Network Security",
+        "university": "University of Technology Mauritius",
+        "year": "MARCH 2018 - NOVEMBER 2020",
+        "line": "education__line"
+      },
+      {
+        "degree": "Full Stack Development",
+        "university": "Developers.institute Mauritius",
+        "year": "MAY 2022 - NOVEMBER 2022",
+        "line": "no__line"
+      }
+    ],
+    "skills": {
+      "section1": [
+      "SQL",
+      "POWER BI DEVELOPMENT",
+      "MS OFFICE ADMINISTRATION",
+      "TECHNICAL SKILLS"
+      ],
+      "section2": [
+      "PYTHON",
+      "HTML",
+      "CSS",
+      "JS"
+      ]
+    }
+  },
+  "experiences": [
+    {
+      "title": "JUNIOR BUSINESS ANALYST/IT SUPPORT",
+      "company": "PROFESSIONAL OUTSOURCING SOLUTIONS LTD",
+      "year": "Oct 2020 - Oct 2022",
+      "description": "As a Junior Business Analyst at PROFESSIONAL OUTSOURCING SOLUTIONS LTD, I honed my data analysis and research skills. I collaborated with senior analysts, generated insightful reports. My contributions to cross-functional projects reinforced my passion for data-driven strategies and enhanced my problem-solving skills.",
+      "line": "experience__line"
+    },
+    {
+      "title": "IT SUPPORT/DEVOPS",
+      "company": "APHELION SOLUTIONS LTD",
+      "year": "Oct 2022 - CURRENT",
+      "description": "As an IT Support Technician and DevOps specialist at Aphelion Solutions Ltd, I delivered essential technical support, resolved IT challenges, and ensured operational stability. Within the DevOps team, I streamlined deployments, automated tasks, and improved system reliability. This dual role provided me with a comprehensive grasp of IT support and technical operations.",
+      "line": "no__line"
+    }
+  ],
+  "certificates": [
+    {
+      "title": "Certificate in.........",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit..."
+    },
+    {
+      "title": "Certificate in.........",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit..."
+    },
+    {
+      "title": "Certificate in.........",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit..."
+    }
+  ],
+  "references": [
+    {
+      "name": "Mr. Damien Mallet",
+      "title": "Python Lecturer",
+      "linkedin": "http://www.linkedin.com"
+    }
+  ],
+  "languages": ["English", "French", "Urdu"],
+  "interests": [
+    {
+      "icon": "bx bx-headphone",
+      "int": "Music"
+    },
+    {
+      "icon": "bx bx-code-alt",
+      "int": "Coding"
+    },
+    {
+      "icon": "bx bx-game",
+      "int": "Gaming"
+    },
+    {
+      "icon": "bx bx-dumbbell",
+      "int": "Fitness"
+    },
+    {
+      "icon": "bx bxs-plane-alt",
+      "int": "Travel"
+    },
+    {
+      "icon": "bx bx-basketball",
+      "int": "Basketball"
+    }
+  ]
+}
