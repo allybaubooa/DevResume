@@ -37,18 +37,6 @@
         "icon": "bx bx-briefcase-alt",
         "link": "#experience",
         "active": "no-link"
-      },
-      {
-        "label": "Certificates",
-        "icon": "bx bx-award",
-        "link": "#certificates",
-        "active": "no-link"
-      },
-      {
-        "label": "References",
-        "icon": "bx bx-link-external",
-        "link": "#references",
-        "active": "no-link"
       }
     ]
   },
