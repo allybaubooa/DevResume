@@ -49,7 +49,7 @@
                         <h3 class="home__profession">{{ resume_data.main.profile.profession }}</h3>
                 <!-- Button to generate and download the pdf. Available for desktop. -->
                         <div>
-                            <a download="" href="static/pdf/ResumeCv.pdf" class="home__button-movil">Download</a>
+                            <a download="" href="../static/pdf/Ally-Resume.pdf" class="home__button-movil">Download</a>
                         </div>
                     </div>
                     <div class="home__address bd-grid">
@@ -67,6 +67,9 @@
 
                 <!-- Theme change button -->
                 <i class='bx bx-toggle-left change-theme' title="Theme" id="theme-button"></i>
+
+
+                <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
             </section>
 
             <!--========== SOCIAL ==========-->
@@ -87,27 +90,6 @@
                 <p class="profile__description">
                     {{resume_data.main.profile_description }}
                 </p>
-            </section>
-
-            <!--========== EDUCATION ==========-->
-            <section class="education section" id="education">
-                <h2 class="section-title">Education</h2>
-                <div class="education__container bd-grid">
-                    {% for education in resume_data.main.education %}
-                        <div class="education__content">
-                            <div class="education__time">
-                                <span class="education__rounder"></span>
-                                <span class="{{ education.line }}"></span>
-                            </div>
-
-                            <div class="education__data bd-grid">
-                                <h3 class="education__title"> {{ education.degree }} </h3>
-                                <span class="education__studies">{{ education.university }}</span>
-                                <span class="education__year">{{ education.year }}</span>
-                            </div>
-                        </div>
-                    {% endfor %}
-                </div>
             </section>
 
             <!--========== SKILLS  ==========-->
@@ -134,6 +116,27 @@
         </div>
 <!--END OF RESUME LEFT-->
         <div class="resume__right">
+
+                        <!--========== EDUCATION ==========-->
+            <section class="education section" id="education">
+                <h2 class="section-title">Education</h2>
+                <div class="education__container bd-grid">
+                    {% for education in resume_data.main.education %}
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="{{ education.line }}"></span>
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title"> {{ education.degree }} </h3>
+                                <span class="education__studies">{{ education.university }}</span>
+                                <span class="education__year">{{ education.year }}</span>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </section>
             <!--========== EXPERIENCE ==========-->
             <section class="experience section" id="experience">
                 <h2 class="section-title">Experiences</h2>
@@ -154,31 +157,31 @@
                 </div>
             </section>
             <!--========== CERTIFICATES ==========-->
-            <section class="certificate section" id="certificates">
-                <h2 class="section-title">Certificates</h2>
+<!--            <section class="certificate section" id="certificates">-->
+<!--                <h2 class="section-title">Certificates</h2>-->
 
-                <div class="certificate__container bd-grid">
-                    {% for certificate in resume_data.certificates %}
-                    <div class="certificate__content">
-                        <h3 class="certificate__title">{{ certificate.title }}</h3>
-                        <p class="certificate__description">{{ certificate.description }}</p>
-                    </div>
-                    {% endfor %}
-                </div>
-            </section>
+<!--                <div class="certificate__container bd-grid">-->
+<!--                    {% for certificate in resume_data.certificates %}-->
+<!--                    <div class="certificate__content">-->
+<!--                        <h3 class="certificate__title">{{ certificate.title }}</h3>-->
+<!--                        <p class="certificate__description">{{ certificate.description }}</p>-->
+<!--                    </div>-->
+<!--                    {% endfor %}-->
+<!--                </div>-->
+<!--            </section>-->
             <!-- References section -->
-            <section class="references section" id="references">
-                <h2 class="section-title">References</h2>
+<!--            <section class="references section" id="references">-->
+<!--                <h2 class="section-title">References</h2>-->
 
-                <div class="references__container bd-grid">
-                    {% for reference in resume_data.references %}
-                        <div class="references__content bd-grid">
-                            <a href="{{ reference.linkedin }}" target="_blank"><i style="font-size: 1.5rem;" class='bx bxl-linkedin-square social__icon'></i></a>
-                            <h3 class="references__title">{{ reference.name }} - {{ reference.title }}</h3>
-                        </div>
-                    {% endfor %}
-                </div>
-            </section>
+<!--                <div class="references__container bd-grid">-->
+<!--                    {% for reference in resume_data.references %}-->
+<!--                        <div class="references__content bd-grid">-->
+<!--                            <a href="{{ reference.linkedin }}" target="_blank"><i style="font-size: 1.5rem;" class='bx bxl-linkedin-square social__icon'></i></a>-->
+<!--                            <h3 class="references__title">{{ reference.name }} - {{ reference.title }}</h3>-->
+<!--                        </div>-->
+<!--                    {% endfor %}-->
+<!--                </div>-->
+<!--            </section>-->
             <!--========== LANGUAGES ==========-->
             <section class="languages section">
                 <h2 class="section-title">Languages</h2>
@@ -218,7 +221,7 @@
     </a>
 
     <!--========== HTML2PDF ==========-->
-    <script src="static/js/html2pdf.bundle.min.js"></script>
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
 
     <!--========== MAIN JS ==========-->
     <script src="{{url_for('static', filename='js/main.js')}}"></script>

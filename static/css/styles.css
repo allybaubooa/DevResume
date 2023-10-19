@@ -26,7 +26,7 @@
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== Margenes ==========*/
+  /*========== Margins ==========*/
   --mb-1: .5rem;
   --mb-2: 1rem;
   --mb-3: 1.5rem;
@@ -72,8 +72,110 @@ body.dark-theme{
 
 /*========== Font size variables to scale cv ==========*/
 
+.scale-cv .change-theme,
+.scale-cv .generate-pdf{
+  display: none;
+}
+
+.scale-cv .bd-container{
+  max-width: 670px;
+}
+
+.scale-cv .section{
+  padding: 1.5rem 0 .80rem;
+}
+
+.scale-cv .section-title{
+  margin-bottom: .75rem;
+}
+
+.scale-cv .resume__left,
+.scale-cv .resume__right{
+  padding: 0 1rem;
+}
+
+.scale-cv .home__img{
+  width: 90px;
+  height: 90px;
+}
+
+.scale-cv .home__container{
+  gap: 1.5rem;
+}
+
+.scale-cv .home__data{
+  gap: .25rem;
+}
+
+.scale-cv .home__address,
+.scale-cv .social__container{
+  gap: .75rem;
+}
+
+.scale-cv .home__icon,
+.scale-cv .social__icon,
+.scale-cv .interests__icon{
+  font-size: 1rem;
+}
+
+.scale-cv .education__container,
+.scale-cv .experience__container,
+.scale-cv .certificate__container{
+  gap: 1rem;
+}
+
+.scale-cv .education__time,
+.scale-cv .experience__time{
+  padding-right: .5rem;
+}
+
+.scale-cv .education__rounder,
+.scale-cv .experience__rounder{
+  width: 11px;
+  height: 10px;
+  margin-top: .22rem;
+}
+
+.scale-cv .education__line{
+  width: 1px;
+  height: 110%;
+  transform: translate(5px ,0);
+}
+
+.scale-cv .experience__line{
+  width: 1px;
+  height: 105%;
+  transform: translate(5px ,0);
+}
+
+.scale-cv .education__data,
+.scale-cv .experience__data{
+  gap: .25rem;
+}
+
+.scale-cv .skills__name{
+  margin-bottom: var(--mb-1);
+}
+
+.scale-cv .interests__container{
+  column-gap: 2.5rem;
+}
 
 /*========== Generate PDF button ==========*/
+
+.generate-pdf{
+  display: none;
+  position: absolute;
+  top: 2.2rem;
+  left: 0;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.generate-pdf:hover{
+  color: var(--title-color);
+}
 
 
 /*========== Classes modified to reduce size and print on A4 sheet ==========*/
@@ -175,6 +277,13 @@ img{
 .nav__toggle{
   font-size: 1.2rem;
   cursor: pointer;
+}
+
+
+.nav__logo{
+  font-size: 20px;
+  font-weight: var(--font-semi-bold);
+  color: var(--text-color);
 }
 
 .nav__item{
@@ -491,7 +600,7 @@ img{
     display: grid;
     grid-template-columns: .5fr 1fr;
     background-color: var(--container-color);
-    box-shadow: 0 0 8px rgba(13,12,12,15);
+    box-shadow: 0 0 8px rgba(13,12,12,.15);
   }
 
   .resume__left{
@@ -500,8 +609,13 @@ img{
 
   .resume__left,
   .resume__right{
-    padding: 1.1rem;
+    padding: 0 1.5rem;
   }
+
+  .generate-pdf{
+    display: inline-block;
+  }
+
   .section-title,
   .profile__description{
     text-align: initial;

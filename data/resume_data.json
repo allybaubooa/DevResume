@@ -5,42 +5,50 @@
       {
         "label": "Home",
         "icon": "bx bx-home-alt",
-        "link": "#home"
+        "link": "#home",
+        "active": "active-link"
       },
       {
         "label": "Socials",
         "icon": "bx bxl-meta",
-        "link": "#social"
+        "link": "#social",
+        "active": "no-link"
       },
       {
         "label": "Profile",
         "icon": "bx bx-user",
-        "link": "#profile"
+        "link": "#profile",
+        "active": "no-link"
       },
       {
         "label": "Education",
         "icon": "bx bx-book",
-        "link": "#education"
+        "link": "#education",
+        "active": "no-link"
       },
       {
         "label": "Skills",
         "icon": "bx bx-receipt",
-        "link": "#skills"
+        "link": "#skills",
+        "active": "no-link"
       },
       {
         "label": "Experience",
         "icon": "bx bx-briefcase-alt",
-        "link": "#experience"
+        "link": "#experience",
+        "active": "no-link"
       },
       {
         "label": "Certificates",
         "icon": "bx bx-award",
-        "link": "#certificates"
+        "link": "#certificates",
+        "active": "no-link"
       },
       {
         "label": "References",
         "icon": "bx bx-link-external",
-        "link": "#references"
+        "link": "#references",
+        "active": "no-link"
       }
     ]
   },
@@ -73,13 +81,13 @@
     "profile_description": "I am a hardworking and dedicated DevOps professional, proficient in Python, HTML, CSS, and JavaScript.\n With a strong focus on organization and a proactive, punctual approach, I thrive in a team-oriented environment.",
     "education": [
       {
-        "degree": "Computer Science with Network Security",
-        "university": "University of Technology Mauritius",
-        "year": "MARCH 2018 - NOVEMBER 2020",
+        "degree": "School Certificate/ Higher School Certificate",
+        "university": "Ramsoondur Prayag State Secondary School",
+        "year": "NOVEMBER 2017",
         "line": "education__line"
       },
       {
-        "degree": "Full Stack Development",
+        "degree": "Full Stack Coding - Python",
         "university": "Developers.institute Mauritius",
         "year": "MAY 2022 - NOVEMBER 2022",
         "line": "no__line"
