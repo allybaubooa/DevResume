@@ -481,7 +481,7 @@ img{
 
 .skills__content,
 .languages__content{
-  gap: 0;
+  gap: 10px;
 }
 
 .skills__name,

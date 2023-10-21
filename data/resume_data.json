@@ -83,16 +83,18 @@
     ],
     "skills": {
       "section1": [
-      "SQL",
-      "POWER BI DEVELOPMENT",
-      "MS OFFICE ADMINISTRATION",
-      "TECHNICAL SKILLS"
+        "SQL",
+        "POWER BI",
+        "OFFICE365 ADMIN",
+        "DATA ANALYSIS",
+        "TECH SUPPORT"
       ],
       "section2": [
-      "PYTHON",
-      "HTML",
-      "CSS",
-      "JS"
+        "PYTHON",
+        "HTML",
+        "CSS",
+        "JS",
+        "DART"
       ]
     }
   },
