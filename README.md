@@ -3,4 +3,4 @@ This is my Personal Project in building my resume using my Python, HTML, CSS and
 
 You can view the deployed version from the page below:
 
-[https://ally-resume.vercel.app/]
+https://ally-resume.vercel.app/
