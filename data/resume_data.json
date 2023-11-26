@@ -66,7 +66,7 @@
         "url": "https://www.facebook.com/allyhussein.baubooa/"
       }
     ],
-    "profile_description": "I am a hardworking and dedicated DevOps professional, proficient in Python, HTML, CSS, and JavaScript.\n With a strong focus on organization and a proactive, punctual approach, I thrive in a team-oriented environment.",
+    "profile_description": "Software Developer @Aphelion Ltd | Expert in Python, Power BI and JavaScript | Building Innovative Web Solutions for Scalability and User Excellence.",
     "education": [
       {
         "degree": "School Certificate/ Higher School Certificate",
@@ -75,7 +75,7 @@
         "line": "education__line"
       },
       {
-        "degree": "Full Stack Coding - Python",
+        "degree": "Full Stack Coding - Python Certificate",
         "university": "Developers.institute Mauritius",
         "year": "MAY 2022 - NOVEMBER 2022",
         "line": "no__line"
@@ -107,10 +107,10 @@
       "line": "experience__line"
     },
     {
-      "title": "IT SUPPORT/DEVOPS",
+      "title": "IT SUPPORT TECHNICIAN/SOFTWARE DEVELOPER",
       "company": "APHELION SOLUTIONS LTD",
       "year": "Oct 2022 - CURRENT",
-      "description": "As an IT Support Technician and DevOps specialist at Aphelion Solutions Ltd, I delivered essential technical support, resolved IT challenges, and ensured operational stability. Within the DevOps team, I streamlined deployments, automated tasks, and improved system reliability. This dual role provided me with a comprehensive grasp of IT support and technical operations.",
+      "description": "As an IT Support Technician at Aphelion Ltd, I delivered essential technical support, resolved IT challenges, and ensured operational stability. As a Developer, I successfully implemented a secure payment system for an e-commerce website. Accomplished in building and enhancing Power BI dashboards for clients, contributed in data cleansing, and proficiently established an enterprise gateway for seamless data refreshing.",
       "line": "no__line"
     }
   ],
