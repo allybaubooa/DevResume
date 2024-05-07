@@ -91,10 +91,10 @@
       ],
       "section2": [
         "PYTHON",
-        "HTML",
-        "CSS",
+        "HTML/CSS",
         "JS",
-        "DART"
+        "VUE JS",
+        "GIT"
       ]
     }
   },
@@ -109,8 +109,15 @@
     {
       "title": "IT SUPPORT TECHNICIAN/SOFTWARE DEVELOPER",
       "company": "APHELION SOLUTIONS LTD",
-      "year": "Oct 2022 - CURRENT",
+      "year": "Oct 2022 - Feb 2024",
       "description": "As an IT Support Technician at Aphelion Ltd, I delivered essential technical support, resolved IT challenges, and ensured operational stability. As a Developer, I successfully implemented a secure payment system for an e-commerce website. Accomplished in building and enhancing Power BI dashboards for clients, contributed in data cleansing, and proficiently established an enterprise gateway for seamless data refreshing.",
+      "line": "experience__line"
+    },
+    {
+      "title": "SOFTWARE DEVELOPER",
+      "company": "Trèfle Applications",
+      "year": "March 2024 - CURRENT",
+      "description": "As a software developer at Trèfle Applications, I specialize in JavaScript development with expertise in the Vue.js framework. Currently, I'm developing a Commercial Tool to help users managing sales calls and follow up with potential customers effectively. I thrive on the challenge of building innovative solutions that drive success for our team and our customers.",
       "line": "no__line"
     }
   ],
