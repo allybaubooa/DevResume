@@ -47,6 +47,7 @@ html{
   scroll-behavior: smooth;
 }
 
+
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
   --title-color: #F2F2F2;
