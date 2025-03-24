@@ -66,7 +66,7 @@
         "url": "https://www.facebook.com/allyhussein.baubooa/"
       }
     ],
-    "profile_description": "Software Developer @Aphelion Ltd | Expert in Python, Power BI and JavaScript | Building Innovative Web Solutions for Scalability and User Excellence.",
+    "profile_description": "Software Developer @Trèfle Applications | Vue.js, Python & Power BI | Building web tools and smart automations for business efficiency",
     "education": [
       {
         "degree": "School Certificate/ Higher School Certificate",
@@ -87,14 +87,16 @@
         "POWER BI",
         "OFFICE365 ADMIN",
         "DATA ANALYSIS",
-        "TECH SUPPORT"
+        "TECH SUPPORT",
+        "API INTERGRATION"
       ],
       "section2": [
         "PYTHON",
         "HTML/CSS",
         "JS",
         "VUE JS",
-        "GIT"
+        "GIT",
+        "VBA"
       ]
     }
   },
@@ -102,22 +104,48 @@
     {
       "title": "JUNIOR BUSINESS ANALYST/IT SUPPORT",
       "company": "PROFESSIONAL OUTSOURCING SOLUTIONS LTD",
+      "address": "Chemin Vingt Pieds, Grand Baie, Mauritius",
       "year": "Oct 2020 - Oct 2022",
-      "description": "As a Junior Business Analyst at PROFESSIONAL OUTSOURCING SOLUTIONS LTD, I honed my data analysis and research skills. I collaborated with senior analysts, generated insightful reports. My contributions to cross-functional projects reinforced my passion for data-driven strategies and enhanced my problem-solving skills.",
+      "description": [
+        "Developed SQL queries using SSMS to support internal reporting.",
+        "Created Table-Valued Functions (TVFs) to simplify and reuse SQL logic.",
+        "Designed automated workflows using Ultimus BPM Suite to streamline business processes.",
+        "Developed reports using SSSRS for operational and analytical needs.",
+        "Collaborated with business users to gather and understand business requirements.",
+        "Improved problem-solving and analytical skills in IT support tasks."
+      ],
       "line": "experience__line"
     },
     {
       "title": "IT SUPPORT TECHNICIAN/SOFTWARE DEVELOPER",
       "company": "APHELION SOLUTIONS LTD",
+      "address": "KL House, Riche Terre, Mauritius",
       "year": "Oct 2022 - Feb 2024",
-      "description": "As an IT Support Technician at Aphelion Ltd, I delivered essential technical support, resolved IT challenges, and ensured operational stability. As a Developer, I successfully implemented a secure payment system for an e-commerce website. Accomplished in building and enhancing Power BI dashboards for clients, contributed in data cleansing, and proficiently established an enterprise gateway for seamless data refreshing.",
+      "description": [
+        "Managed servers and IT devices for clients, ensuring stable operations and security.",
+        "Set up laptops, created and managed user accounts on servers.",
+        "Created and administered Office 365 accounts for users.",
+        "Analyzed and troubleshoot hardware and software issues across devices.",
+        "Managed telephone lines and provided technical setup for meetings.",
+        "Implemented a secure payment system (MPGS) in the client’s e-commerce website.",
+        "Developed SQL queries and scheduled automated jobs to execute them.",
+        "Build and deploy Power BI reports tailored to client requirements."
+      ],
       "line": "experience__line"
     },
     {
       "title": "SOFTWARE DEVELOPER",
       "company": "Trèfle Applications",
+      "address": "16 bis quai de Stalingrad, 92100 Boulogne-Billancourt, France - Remote",
       "year": "March 2024 - CURRENT",
-      "description": "As a software developer at Trèfle Applications, I specialize in JavaScript development with expertise in the Vue.js framework. Currently, I'm developing a Commercial Tool to help users managing sales calls and follow up with potential customers effectively. I thrive on the challenge of building innovative solutions that drive success for our team and our customers.",
+      "description": [
+        "Working with JavaScript and Vue.js frameworks for web development.",
+        "Developed a ticketing system and a commercial tool to manage sales activities.",
+        "Developed SQL queries to build Power BI reports to client requirements.",
+        "Created Python scripts to automate client tasks and improve efficiency.",
+        "APIs integration into systems and ensuring their secure usage.",
+        "Maintaining automation workflows to ensure reliability and performance."
+      ],
       "line": "no__line"
     }
   ],
@@ -145,8 +173,8 @@
   "languages": ["English", "French", "Urdu"],
   "interests": [
     {
-      "icon": "bx bx-headphone",
-      "int": "Music"
+      "icon": "bx bx-bug",
+      "int": "AI"
     },
     {
       "icon": "bx bx-code-alt",
@@ -157,16 +185,16 @@
       "int": "Gaming"
     },
     {
+      "icon": "bx bx-headphone",
+      "int": "Music"
+    },
+    {
       "icon": "bx bx-dumbbell",
       "int": "Fitness"
     },
     {
       "icon": "bx bxs-plane-alt",
       "int": "Travel"
-    },
-    {
-      "icon": "bx bx-basketball",
-      "int": "Basketball"
     }
   ]
 }

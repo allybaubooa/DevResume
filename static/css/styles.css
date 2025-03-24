@@ -83,7 +83,7 @@ body.dark-theme{
 }
 
 .scale-cv .bd-container{
-  max-width: 670px;
+  max-width: 1020px;
 }
 
 .scale-cv .section{
@@ -148,9 +148,7 @@ body.dark-theme{
 }
 
 .scale-cv .experience__line{
-  width: 1px;
-  height: 105%;
-  transform: translate(5px ,0);
+  display: none;
 }
 
 .scale-cv .education__data,
@@ -163,6 +161,7 @@ body.dark-theme{
 }
 
 .scale-cv .interests__container{
+  grid-template-columns: repeat(4, max-content);
   column-gap: 2.5rem;
 }
 
@@ -219,7 +218,7 @@ img{
 
 /*========== CLASS CSS ==========*/
 .section{
-  padding: 1.5rem 0;
+  padding: 1rem 0;
 }
 
 .section-title{
@@ -496,8 +495,14 @@ img{
   margin-bottom: var(--mb-3);
 }
 
+.experience__name{
+  display: flex;
+  align-items: center;
+}
+
 .skills__circle,
-.languages__circle{
+.languages__circle,
+.experiences__circle{
   display: inline-block;
   width: 5px;
   height: 5px;
@@ -614,7 +619,7 @@ img{
 
   .resume__left,
   .resume__right{
-    padding: 0 1.5rem;
+    padding: 0 1rem;
   }
 
   .generate-pdf{
@@ -635,11 +640,11 @@ img{
   }
 
   .languages__content{
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(2, max-content);
     column-gap: 4.5rem;
   }
   .interests__container{
-    grid-template-columns: repeat(4, max-content);
+    grid-template-columns: repeat(6, max-content);
     column-gap: 3.5rem;
   }
 }

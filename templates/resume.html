@@ -113,6 +113,20 @@
                     </ul>
                 </div>
             </section>
+                        <!--========== LANGUAGES ==========-->
+            <section class="languages section">
+                <h2 class="section-title">Languages</h2>
+
+                <div class="languages_container">
+                    <ul class="languages__content bd-grid">
+                        {% for language in resume_data.languages %}
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> {{ language }}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </section> 
         </div>
 <!--END OF RESUME LEFT-->
         <div class="resume__right">
@@ -149,8 +163,16 @@
                         </div>
                         <div class="experience__data bd-grid">
                             <h3 class="experience__title">{{ experience.title }}</h3>
-                            <span class="experience__company">{{ experience.year }} | {{ experience.company }}</span>
-                            <p class="experience__description">{{ experience.description }}</p>
+                            <span class="experience__company">{{ experience.year }} | {{ experience.company }} ({{ experience.address }})</span>
+                            <p class="experience__description">
+                                <ul>
+                                    {% for description in experience.description %}
+                                        <li class="experience__name">
+                                            <span class="experiences__circle"></span> {{ description }}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </p>
                         </div>
                     </div>
                 {% endfor %}
@@ -182,7 +204,7 @@
 <!--                    {% endfor %}-->
 <!--                </div>-->
 <!--            </section>-->
-            <!--========== LANGUAGES ==========-->
+            <!-- ========== LANGUAGES ==========
             <section class="languages section">
                 <h2 class="section-title">Languages</h2>
 
@@ -195,7 +217,7 @@
                         {% endfor %}
                     </ul>
                 </div>
-            </section>
+            </section> -->
 
             <!--========== INTERESTS ==========-->
             <section class="interests section">
