@@ -63,7 +63,7 @@ body.dark-theme{
 .change-theme{
   position: absolute;
   right: 0;
-  top: 2.2rem;
+  top: 1rem;
   display: flex;
   color: var(--text-color);
   font-size: 2rem;
@@ -78,7 +78,8 @@ body.dark-theme{
 /*========== Font size variables to scale cv ==========*/
 
 .scale-cv .change-theme,
-.scale-cv .generate-pdf{
+.scale-cv .generate-pdf,
+.scale-cv .language-switcher{
   display: none;
 }
 
@@ -170,8 +171,8 @@ body.dark-theme{
 .generate-pdf{
   display: none;
   position: absolute;
-  top: 2.2rem;
-  left: 0;
+  top: 5.2rem;
+  left: 15px;
   font-size: 1.5rem;
   color: var(--text-color);
   cursor: pointer;
@@ -179,6 +180,37 @@ body.dark-theme{
 
 .generate-pdf:hover{
   color: var(--title-color);
+}
+
+.language-switcher {
+  position: absolute;
+  top: 0.8rem;
+  left: 0;
+  padding: 0.25rem 0.75rem;
+  color: var(--text-color);
+  background-color: rgba(--body-color, 0.85);
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  z-index: 1000;
+}
+
+.language-switcher select {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  color: var(--text-color);
+  cursor: pointer;
+  outline: none;
+}
+
+.language-select{
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  color: var(--text-color);
+  cursor: pointer;
+  outline: none;
 }
 
 

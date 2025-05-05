@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,130 +13,155 @@
 
     <title>Ally Resume</title>
 </head>
+
 <body>
 
-{% block content %}
-<header class="l-header" id="header">
-            <nav class="nav bd-container">
-                <a href="#" class="nav__logo">Ally</a>
+    {% block content %}
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Ally</a>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        {% for menu in resume_data.header.menu %}
-                            <li class="nav__item">
-                                <a href="{{ menu.link }}" class="nav__link active-link">
-                                    <i class='{{ menu. icon}} nav__icon'></i> {{ menu.label }}
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    {% for menu in resume_data.header.menu %}
+                    <li class="nav__item">
+                        <a href="{{ menu.link }}" class="nav__link active-link">
+                            <i class='{{ menu. icon}} nav__icon'></i> {{ menu.label }}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main bd-container">
+        <!-- All elements within this div, is generated in PDF -->
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+                <!--========== HOME ==========-->
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="{{ resume_data.main.profile.image }}" alt="" class="home__img">
+                            <h1 class="home__title">{{ resume_data.main.profile.name }}</h1>
+                            <h3 class="home__profession">{{ resume_data.main.profile.profession }}</h3>
+                            <!-- Button to generate and download the pdf. Available for desktop. -->
+                            <div>
+                                <a download href="{{ url_for('static', filename='pdf/Ally-Resume_' + lang + '.pdf') }}"
+                                    class="home__button-movil">
+                                    {% if lang == 'fr' %}
+                                    Télécharger
+                                    {% else %}
+                                    Download
+                                    {% endif %}
                                 </a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-grid-alt'></i>
-                </div>
-            </nav>
-</header>
-
-<main class="l-main bd-container">
-    <!-- All elements within this div, is generated in PDF -->
-    <div class="resume" id="area-cv">
-        <div class="resume__left">
-            <!--========== HOME ==========-->
-            <section class="home" id="home">
-                <div class="home__container section bd-grid">
-                    <div class="home__data bd-grid">
-                        <img src="{{ resume_data.main.profile.image }}" alt="" class="home__img">
-                        <h1 class="home__title">{{ resume_data.main.profile.name }}</h1>
-                        <h3 class="home__profession">{{ resume_data.main.profile.profession }}</h3>
-                <!-- Button to generate and download the pdf. Available for desktop. -->
-                        <div>
-                            <a download="../static/pdf/Ally-Resume.pdf" href="../static/pdf/Ally-Resume.pdf" class="home__button-movil">Download</a>
+                            </div>
+                        </div>
+                        <div class="home__address bd-grid">
+                            <span class="home__information">
+                                <i class="bx bx-map home__icon"></i> {{ resume_data.main.profile.address }}
+                            </span>
+                            <span class="home__information">
+                                <i class="bx bx-envelope home__icon"></i> {{ resume_data.main.profile.email }}
+                            </span>
+                            <span class="home__information">
+                                <i class="bx bx-phone home__icon"></i> {{ resume_data.main.profile.phone }}
+                            </span>
                         </div>
                     </div>
-                    <div class="home__address bd-grid">
-                        <span class="home__information">
-                            <i class="bx bx-map home__icon"></i>  {{ resume_data.main.profile.address }}
-                        </span>
-                        <span class="home__information">
-                            <i class="bx bx-envelope home__icon"></i>  {{ resume_data.main.profile.email }}
-                        </span>
-                        <span class="home__information">
-                            <i class="bx bx-phone home__icon"></i>  {{ resume_data.main.profile.phone }}
-                        </span>
+
+                    <!-- Theme change button -->
+                    <div id="language-switcher" class="language-switcher">
+                        <form method="get" onchange="this.submit()">
+                            <select name="lang" class="language-select" id="language-select">
+                                <option value="en" {% if lang=='en' %}selected{% endif %}>En</option>
+                                <option value="fr" {% if lang=='fr' %}selected{% endif %}>Fr</option>
+                            </select>
+                        </form>
                     </div>
-                </div>
 
-                <!-- Theme change button -->
-                <i class='bx bx-toggle-left change-theme' title="Theme" id="theme-button"></i>
+                    <i class='bx bx-toggle-left change-theme' title="Theme" id="theme-button"></i>
 
 
-                <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
-            </section>
+                    <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
+                </section>
 
-            <!--========== SOCIAL ==========-->
-            <section class="social section" id="social">
-                <h2 class="section-title">SOCIALS</h2>
+                <!--========== SOCIAL ==========-->
+                <section class="social section" id="social">
+                    <h2 class="section-title">
+                        {{ resume_data['labels']['socials'] }}
+                    </h2>
 
-                <div class="social__container bd-grid">
-                    {% for social in resume_data.main.socials %}
+                    <div class="social__container bd-grid">
+                        {% for social in resume_data.main.socials %}
                         <a href="{{ social.url }}" target="_blank" class="social__link">
                             <i class='{{ social.icon }} social__icon'></i> @allybaubooa
                         </a>
-                    {% endfor %}
-                </div>
-            </section>
-            <!--========== PROFILE ==========-->
-            <section class="profile section" id="profile">
-                <h2 class="section-title">Profile</h2>
-                <p class="profile__description">
-                    {{resume_data.main.profile_description }}
-                </p>
-            </section>
+                        {% endfor %}
+                    </div>
+                </section>
+                <!--========== PROFILE ==========-->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title">
+                        {{ resume_data['labels']['profile'] }}
+                    </h2>
+                    <p class="profile__description">
+                        {{resume_data.main.profile_description }}
+                    </p>
+                </section>
 
-            <!--========== SKILLS  ==========-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__content bd-grid">
-                    <ul class="skills__data">
-                    {% for education in resume_data.main.skills.section1 %}
-                        <li class="skills__name">
-                            <span class="skills__circle"></span> {{ education }}
-                        </li>
-                    {% endfor %}
-                    </ul>
-                    <ul class="skills__data">
-                    {% for education in resume_data.main.skills.section2 %}
-                        <li class="skills__name">
-                            <span class="skills__circle"></span> {{ education }}
-                        </li>
-                    {% endfor %}
-                    </ul>
-                </div>
-            </section>
-                        <!--========== LANGUAGES ==========-->
-            <section class="languages section">
-                <h2 class="section-title">Languages</h2>
-
-                <div class="languages_container">
-                    <ul class="languages__content bd-grid">
-                        {% for language in resume_data.languages %}
+                <!--========== SKILLS  ==========-->
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">
+                        {{ resume_data['labels']['skills'] }}
+                    </h2>
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            {% for education in resume_data.main.skills.section1 %}
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> {{ education }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        <ul class="skills__data">
+                            {% for education in resume_data.main.skills.section2 %}
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> {{ education }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </section>
+                <!--========== LANGUAGES ==========-->
+                <section class="languages section">
+                    <h2 class="section-title">
+                        {{ resume_data['labels']['languages'] }}
+                    </h2>
+                    <div class="languages_container">
+                        <ul class="languages__content bd-grid">
+                            {% for language in resume_data.languages %}
                             <li class="languages__name">
                                 <span class="languages__circle"></span> {{ language }}
                             </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </section> 
-        </div>
-<!--END OF RESUME LEFT-->
-        <div class="resume__right">
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <!--END OF RESUME LEFT-->
+            <div class="resume__right">
 
-                        <!--========== EDUCATION ==========-->
-            <section class="education section" id="education">
-                <h2 class="section-title">Education</h2>
-                <div class="education__container bd-grid">
-                    {% for education in resume_data.main.education %}
+                <!--========== EDUCATION ==========-->
+                <section class="education section" id="education">
+                    <h2 class="section-title">
+                        {{ resume_data['labels']['education'] }}
+                    </h2>
+                    <div class="education__container bd-grid">
+                        {% for education in resume_data.main.education %}
                         <div class="education__content">
                             <div class="education__time">
                                 <span class="education__rounder"></span>
@@ -148,63 +174,66 @@
                                 <span class="education__year">{{ education.year }}</span>
                             </div>
                         </div>
-                    {% endfor %}
-                </div>
-            </section>
-            <!--========== EXPERIENCE ==========-->
-            <section class="experience section" id="experience">
-                <h2 class="section-title">Professional Experiences</h2>
-                <div class="experience__container bd-grid">
-                {% for experience in resume_data.experiences %}
-                    <div class="experience__content">
-                        <div class="experience__time">
-                            <span class="experience__rounder"></span>
-                            <span class="{{ experience.line }}"></span>
-                        </div>
-                        <div class="experience__data bd-grid">
-                            <h3 class="experience__title">{{ experience.title }}</h3>
-                            <span class="experience__company">{{ experience.year }} | {{ experience.company }} ({{ experience.address }})</span>
-                            <p class="experience__description">
+                        {% endfor %}
+                    </div>
+                </section>
+                <!--========== EXPERIENCE ==========-->
+                <section class="experience section" id="experience">
+                    <h2 class="section-title">
+                        {{ resume_data['labels']['experience'] }}
+                    </h2>
+                    <div class="experience__container bd-grid">
+                        {% for experience in resume_data.experiences %}
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="{{ experience.line }}"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">{{ experience.title }}</h3>
+                                <span class="experience__company">{{ experience.year }} | {{ experience.company }} ({{
+                                    experience.address }})</span>
+                                <p class="experience__description">
                                 <ul>
                                     {% for description in experience.description %}
-                                        <li class="experience__name">
-                                            <span class="experiences__circle"></span> {{ description }}
-                                        </li>
+                                    <li class="experience__name">
+                                        <span class="experiences__circle"></span> {{ description }}
+                                    </li>
                                     {% endfor %}
                                 </ul>
-                            </p>
+                                </p>
+                            </div>
                         </div>
+                        {% endfor %}
                     </div>
-                {% endfor %}
-                </div>
-            </section>
-            <!--========== CERTIFICATES ==========-->
-<!--            <section class="certificate section" id="certificates">-->
-<!--                <h2 class="section-title">Certificates</h2>-->
+                </section>
+                <!--========== CERTIFICATES ==========-->
+                <!--            <section class="certificate section" id="certificates">-->
+                <!--                <h2 class="section-title">Certificates</h2>-->
 
-<!--                <div class="certificate__container bd-grid">-->
-<!--                    {% for certificate in resume_data.certificates %}-->
-<!--                    <div class="certificate__content">-->
-<!--                        <h3 class="certificate__title">{{ certificate.title }}</h3>-->
-<!--                        <p class="certificate__description">{{ certificate.description }}</p>-->
-<!--                    </div>-->
-<!--                    {% endfor %}-->
-<!--                </div>-->
-<!--            </section>-->
-            <!-- References section -->
-<!--            <section class="references section" id="references">-->
-<!--                <h2 class="section-title">References</h2>-->
+                <!--                <div class="certificate__container bd-grid">-->
+                <!--                    {% for certificate in resume_data.certificates %}-->
+                <!--                    <div class="certificate__content">-->
+                <!--                        <h3 class="certificate__title">{{ certificate.title }}</h3>-->
+                <!--                        <p class="certificate__description">{{ certificate.description }}</p>-->
+                <!--                    </div>-->
+                <!--                    {% endfor %}-->
+                <!--                </div>-->
+                <!--            </section>-->
+                <!-- References section -->
+                <!--            <section class="references section" id="references">-->
+                <!--                <h2 class="section-title">References</h2>-->
 
-<!--                <div class="references__container bd-grid">-->
-<!--                    {% for reference in resume_data.references %}-->
-<!--                        <div class="references__content bd-grid">-->
-<!--                            <a href="{{ reference.linkedin }}" target="_blank"><i style="font-size: 1.5rem;" class='bx bxl-linkedin-square social__icon'></i></a>-->
-<!--                            <h3 class="references__title">{{ reference.name }} - {{ reference.title }}</h3>-->
-<!--                        </div>-->
-<!--                    {% endfor %}-->
-<!--                </div>-->
-<!--            </section>-->
-            <!-- ========== LANGUAGES ==========
+                <!--                <div class="references__container bd-grid">-->
+                <!--                    {% for reference in resume_data.references %}-->
+                <!--                        <div class="references__content bd-grid">-->
+                <!--                            <a href="{{ reference.linkedin }}" target="_blank"><i style="font-size: 1.5rem;" class='bx bxl-linkedin-square social__icon'></i></a>-->
+                <!--                            <h3 class="references__title">{{ reference.name }} - {{ reference.title }}</h3>-->
+                <!--                        </div>-->
+                <!--                    {% endfor %}-->
+                <!--                </div>-->
+                <!--            </section>-->
+                <!-- ========== LANGUAGES ==========
             <section class="languages section">
                 <h2 class="section-title">Languages</h2>
 
@@ -219,27 +248,29 @@
                 </div>
             </section> -->
 
-            <!--========== INTERESTS ==========-->
-            <section class="interests section">
-                <h2 class="section-title">Interests</h2>
+                <!--========== INTERESTS ==========-->
+                <section class="interests section">
+                    <h2 class="section-title">
+                        {{ resume_data['labels']['interests'] }}
+                    </h2>
 
-                <div class="interests__container bd-grid">
-                    {% for interest in resume_data.interests %}
-                    <div class="interests__content">
-                        <i class='{{ interest.icon }} interests__icon'></i>
-                        <span class="interests__name">{{ interest.int }}</span>
+                    <div class="interests__container bd-grid">
+                        {% for interest in resume_data.interests %}
+                        <div class="interests__content">
+                            <i class='{{ interest.icon }} interests__icon'></i>
+                            <span class="interests__name">{{ interest.int }}</span>
+                        </div>
+                        {% endfor %}
                     </div>
-                    {% endfor %}
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
-    </div>
-</main>
+    </main>
 
-{% endblock %}
+    {% endblock %}
     <!--========== SCROLL TOP ==========-->
     <a href="#" class="scrolltop" id="scroll-top">
-        <i class='bx bx-up-arrow-alt scrolltop__icon' ></i>
+        <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
     </a>
 
     <!--========== HTML2PDF ==========-->
@@ -248,4 +279,5 @@
     <!--========== MAIN JS ==========-->
     <script src="{{url_for('static', filename='js/main.js')}}"></script>
 </body>
+
 </html>
