@@ -1,218 +1,121 @@
 {
-  "header": {
-    "logo": "Ally",
-    "menu": [
-      {
-        "label": "Accueil",
-        "icon": "bx bx-home-alt",
-        "link": "#home",
-        "active": "active-link"
-      },
-      {
-        "label": "Réseaux",
-        "icon": "bx bxl-meta",
-        "link": "#social",
-        "active": "no-link"
-      },
-      {
-        "label": "Profil",
-        "icon": "bx bx-user",
-        "link": "#profile",
-        "active": "no-link"
-      },
-      {
-        "label": "Compétences",
-        "icon": "bx bx-receipt",
-        "link": "#skills",
-        "active": "no-link"
-      },
-      {
-        "label": "Éducation",
-        "icon": "bx bx-book",
-        "link": "#education",
-        "active": "no-link"
-      },
-      {
-        "label": "Experience",
-        "icon": "bx bx-briefcase-alt",
-        "link": "#experience",
-        "active": "no-link"
-      }
-    ]
-  },
   "labels": {
-    "profile": "Profil",
-    "experience": "Expériences",
-    "skills": "Compétences",
-    "education": "Éducation",
-    "certificates": "Certificats",
+    "profile": "Profil professionnel",
+    "experience": "Expérience professionnelle",
+    "skills": "Compétences techniques",
+    "education": "Formation",
     "languages": "Langues",
-    "interests": "Intérêt",
-    "socials": "Réseaux"
+    "socials": "Liens"
   },
   "main": {
     "profile": {
       "name": "ALLY HUSSEIN BAUBOOA",
-      "profession": "Développeur Full Stack",
+      "profession": "Développeur Full-Stack",
       "image": "static/images/ProfileImage.jpg",
-      "address": "Mosque Road - Goodlands - Mauritius",
+      "address": "Goodlands, Maurice",
       "email": "allyhusseinbaubooa@gmail.com",
-      "phone": "+230 58163182"
+      "phone": "+230 5816 3182"
     },
     "socials": [
       {
         "icon": "bx bxl-linkedin-square",
         "network": "LinkedIn",
+        "display": "ally-hussein-baubooa",
         "url": "https://www.linkedin.com/in/ally-hussein-baubooa-63a87b244/"
       },
       {
         "icon": "bx bxl-github",
         "network": "GitHub",
+        "display": "allybaubooa",
         "url": "https://github.com/allybaubooa"
-      },
-      {
-        "icon": "bx bxl-facebook",
-        "network": "Facebook",
-        "url": "https://www.facebook.com/allyhussein.baubooa/"
       }
     ],
-    "profile_description": "Développeur chez Trèfle Applications | Vue.js, Python et Power BI | Création d’outils web et d’automatisme pour améliorer l’efficacité des entreprises",
+    "profile_description": "Développeur full-stack avec plus de 6 ans d’expérience dans la création d’applications web, l’intégration d’API métier, l’automatisation de processus avec Python et la réalisation de solutions de reporting SQL et Power BI.",
     "education": [
       {
-        "degree": "School Certificate/ Higher School Certificate",
-        "university": "Ramsoondur Prayag State Secondary School",
-        "year": "NOVEMBER 2017",
-        "line": "education__line"
+        "degree": "Machine Learning et IA générative, Certificat",
+        "university": "Developers Institute Mauritius",
+        "year": "Déc. 2025 - juin 2026"
       },
       {
-        "degree": "Full Stack Coding - Python Certificate",
-        "university": "Developers.institute Mauritius",
-        "year": "MAY 2022 - NOVEMBER 2022",
-        "line": "no__line"
+        "degree": "Développement Web Full-Stack (Python), Certificat",
+        "university": "Developers Institute Mauritius",
+        "year": "Mai 2022 - nov. 2022"
+      },
+      {
+        "degree": "School Certificate & Higher School Certificate",
+        "university": "Ramsoondur Prayag State Secondary School",
+        "year": "Terminé en nov. 2017"
       }
     ],
-    "skills": {
-      "section1": [
-        "SQL",
-        "POWER BI",
-        "OFFICE365 ADMIN",
-        "ANALYSE DATA",
-        "SUPPORT TECH",
-        "INTERGRATION API",
-        "API BIM 360"
-      ],
-      "section2": [
-        "PYTHON",
-        "HTML/CSS",
-        "JS",
-        "VUE JS",
-        "GIT",
-        "VBA",
-        "FLASK",
-        "API MPGS"
-      ]
-    }
+    "skills": [
+      {
+        "category": "Langages",
+        "items": "Python, JavaScript, TypeScript, SQL, VBA"
+      },
+      {
+        "category": "Web",
+        "items": "Vue.js, Nuxt.js, React, Next.js, Flask, HTML, CSS, API REST"
+      },
+      {
+        "category": "Développement mobile",
+        "items": "React Native, Capacitor, Flutter"
+      },
+      {
+        "category": "Données",
+        "items": "Power BI, SQL, SSRS, PostgreSQL, SQLite, MySQL, Pandas, NumPy"
+      },
+      {
+        "category": "Plateformes",
+        "items": "Git, Microsoft 365, Linux, Windows Server, macOS, Docker, AWS"
+      },
+      {
+        "category": "Intégrations",
+        "items": "API Autodesk, API MPGS, Ultimus BPM, API Gemini, API OpenAI, Ollama, Firebase, Supabase, API PayPal"
+      }
+    ]
   },
   "experiences": [
     {
-      "title": "Data Analyste junior / Support informatique",
-      "company": "PROFESSIONAL OUTSOURCING SOLUTIONS LTD",
-      "address": "Chemin Vingt Pieds, Grand Baie, Maurice",
-      "year": "Oct 2020 - Oct 2022",
-      "description": [
-        "Création de requêtes SQL pour aider aux rapports internes",
-        "Création de fonctions réutilisables(TVF) pour simplifier les requêtes",
-        "Mise en place de automatisme sur Ultimus BPM pour l'efficacité du travail",
-        "Création de rapports sur SSRS utiles pour suivre les performances de l’entreprise",
-        "Collaboratiom avec les autres équipes pour bien comprendre leurs besoins",
-        "Résolution de problèmes techniques et analytique liés à l’informatique"
-      ],
-      "line": "experience__line"
-    },
-    {
-      "title": "Technicien support / Développeur logiciel",
-      "company": "APHELION SOLUTIONS LTD",
-      "address": "KL House, Riche Terre, Maurice",
-      "year": "Oct 2022 - Fév 2024",
-      "description": [
-        "Gestion des serveurs(Linux et Windows) et équipements informatiques pour les clients",
-        "Configuration d’ordinateurs portables et gestion des comptes utilisateurs",
-        "Création et Gestions de comptes Office 365 chez les clients",
-        "Dépannage des problèmes sur ordinateurs et logiciels",
-        "Gestion des lignes téléphoniques et préparation technique des réunions",
-        "Intégration d’un système de paiement sécurisé(MPGS) sur un site e-commerce",
-        "Développement de requêtes SQL et les exécutées automatiquement",
-        "Création de rapports Power BI selon les demandes des clients"
-      ],
-      "line": "experience__line"
-    },
-    {
       "title": "Développeur logiciel",
       "company": "Trèfle Applications",
-      "address": "16 bis quai de Stalingrad, 92100 Boulogne-Billancourt, France - Télétravail",
-      "year": "Mars 2024 - Aujourd’hui",
+      "location": "Télétravail · France",
+      "year": "Mars 2024 - aujourd’hui",
       "description": [
-        "Développement de sites web avec Vue.js et Flask",
-        "Création d’un système de tickets et d’un outil suivi commerciale",
-        "Analyse des données avec SQL pour créer des rapports Power BI",
-        "Automatisation de tâches avec Python pour améliorer l'efficacité du travail",
-        "Intégration d’API dans les projets en assurant leur securité",
-        "Développement d’un outil de gestion des fichier BIM 360 pour un client",
-        "Suivi et amélioration des automatisations pour qu’elles restent fiables"
-      ],
-      "line": "no__line"
-    }
-  ],
-  "certificates": [
-    {
-      "title": "Certificate in.........",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit..."
+        "Développement et maintenance d’applications Vue.js et Flask pour la gestion des tickets et le suivi commercial, centralisant les processus clients.",
+        "Création d’automatisations Python et de workflows n8n intégrant des API afin d’améliorer l’efficacité opérationnelle et la fiabilité en production.",
+        "Intégration sécurisée d’API métier, notamment un outil Python de gestion de fichiers clients via l’API Autodesk BIM 360.",
+        "Création de jeux de données SQL et de rapports Power BI adaptés aux besoins de reporting des clients.",
+        "Maintenance de sites WordPress sécurisés et performants, et développement d’outils Excel VBA automatisant les processus métier internes."
+      ]
     },
     {
-      "title": "Certificate in.........",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit..."
+      "title": "Technicien support informatique / Développeur logiciel",
+      "company": "Aphelion Solutions Ltd",
+      "location": "Riche Terre, Maurice",
+      "year": "Oct. 2022 - févr. 2024",
+      "description": [
+        "Administration de serveurs Linux et Windows, de comptes Microsoft 365, des accès utilisateurs et des équipements informatiques clients.",
+        "Diagnostic des incidents matériels, logiciels, téléphoniques et audiovisuels afin de maintenir la continuité des opérations.",
+        "Intégration de Mastercard Payment Gateway Services (MPGS) à une plateforme e-commerce avec gestion sécurisée des transactions.",
+        "Automatisation de tâches SQL planifiées et livraison de rapports Power BI selon les besoins des clients."
+      ]
     },
     {
-      "title": "Certificate in.........",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit..."
-    }
-  ],
-  "references": [
-    {
-      "name": "Mr. Damien",
-      "title": "Python Lecturer",
-      "linkedin": "http://www.linkedin.com"
+      "title": "Data Analyst junior / Support informatique",
+      "company": "Professional Outsourcing Solutions Ltd",
+      "location": "Grand Baie, Maurice",
+      "year": "Oct. 2020 - oct. 2022",
+      "description": [
+        "Développement de requêtes SQL Server réutilisables et de fonctions table-valued pour alimenter les rapports opérationnels SSRS.",
+        "Automatisation de processus métier internes avec Ultimus BPM Suite afin de simplifier les tâches récurrentes.",
+        "Collaboration avec les utilisateurs métier pour traduire leurs besoins en rapports et résoudre les incidents techniques liés aux données."
+      ]
     }
   ],
   "languages": [
-    "English",
-    "French",
+    "Anglais",
+    "Français",
     "Urdu"
-  ],
-  "interests": [
-    {
-      "icon": "bx bx-bug",
-      "int": "IA"
-    },
-    {
-      "icon": "bx bx-code-alt",
-      "int": "Codage"
-    },
-    {
-      "icon": "bx bx-game",
-      "int": "Jeux vidéo"
-    },
-    {
-      "icon": "bx bx-headphone",
-      "int": "Musique"
-    },
-    {
-      "icon": "bx bx-dumbbell",
-      "int": "Fitness"
-    },
-    {
-      "icon": "bx bxs-plane-alt",
-      "int": "Voyager"
-    }
   ]
 }

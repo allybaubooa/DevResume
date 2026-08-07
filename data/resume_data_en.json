@@ -1,218 +1,121 @@
 {
-  "header": {
-    "logo": "Ally",
-    "menu": [
-      {
-        "label": "Home",
-        "icon": "bx bx-home-alt",
-        "link": "#home",
-        "active": "active-link"
-      },
-      {
-        "label": "Socials",
-        "icon": "bx bxl-meta",
-        "link": "#social",
-        "active": "no-link"
-      },
-      {
-        "label": "Profile",
-        "icon": "bx bx-user",
-        "link": "#profile",
-        "active": "no-link"
-      },
-      {
-        "label": "Skills",
-        "icon": "bx bx-receipt",
-        "link": "#skills",
-        "active": "no-link"
-      },
-      {
-        "label": "Education",
-        "icon": "bx bx-book",
-        "link": "#education",
-        "active": "no-link"
-      },
-      {
-        "label": "Experience",
-        "icon": "bx bx-briefcase-alt",
-        "link": "#experience",
-        "active": "no-link"
-      }
-    ]
-  },
   "labels": {
-    "profile": "Profile",
-    "experience": "Experience",
-    "skills": "Skills",
+    "profile": "Professional Summary",
+    "experience": "Professional Experience",
+    "skills": "Technical Skills",
     "education": "Education",
-    "certificates": "Certificates",
     "languages": "Languages",
-    "interests": "Interests",
-    "socials": "Socials"
+    "socials": "Links"
   },
   "main": {
     "profile": {
       "name": "ALLY HUSSEIN BAUBOOA",
-      "profession": "Full Stack Developer",
+      "profession": "Full-Stack Developer",
       "image": "static/images/ProfileImage.jpg",
-      "address": "Mosque Road - Goodlands - Mauritius",
+      "address": "Goodlands, Mauritius",
       "email": "allyhusseinbaubooa@gmail.com",
-      "phone": "+230 58163182"
+      "phone": "+230 5816 3182"
     },
     "socials": [
       {
         "icon": "bx bxl-linkedin-square",
         "network": "LinkedIn",
+        "display": "ally-hussein-baubooa",
         "url": "https://www.linkedin.com/in/ally-hussein-baubooa-63a87b244/"
       },
       {
         "icon": "bx bxl-github",
         "network": "GitHub",
+        "display": "allybaubooa",
         "url": "https://github.com/allybaubooa"
-      },
-      {
-        "icon": "bx bxl-facebook",
-        "network": "Facebook",
-        "url": "https://www.facebook.com/allyhussein.baubooa/"
       }
     ],
-    "profile_description": "Software Developer @Trèfle Applications | Vue.js, Python & Power BI | Building web tools and smart automations for business efficiency",
+    "profile_description": "Full-stack developer with 6+ years of experience building web applications, integrating business APIs, automating workflows with Python, and delivering SQL and Power BI reporting solutions.",
     "education": [
       {
-        "degree": "School Certificate/ Higher School Certificate",
-        "university": "Ramsoondur Prayag State Secondary School",
-        "year": "NOVEMBER 2017",
-        "line": "education__line"
+        "degree": "Machine Learning and GenAI Certificate",
+        "university": "Developers Institute Mauritius",
+        "year": "Dec 2025 - Jun 2026"
       },
       {
-        "degree": "Full Stack Coding - Python Certificate",
-        "university": "Developers.institute Mauritius",
-        "year": "MAY 2022 - NOVEMBER 2022",
-        "line": "no__line"
+        "degree": "Full-Stack Web Development (Python), Certificate",
+        "university": "Developers Institute Mauritius",
+        "year": "May 2022 - Nov 2022"
+      },
+      {
+        "degree": "School Certificate & Higher School Certificate",
+        "university": "Ramsoondur Prayag State Secondary School",
+        "year": "Completed Nov 2017"
       }
     ],
-    "skills": {
-      "section1": [
-        "SQL",
-        "POWER BI",
-        "OFFICE365 ADMIN",
-        "DATA ANALYSIS",
-        "TECH SUPPORT",
-        "API INTERGRATION",
-        "BIM 360 API"
-      ],
-      "section2": [
-        "PYTHON",
-        "HTML/CSS",
-        "JS",
-        "VUE JS",
-        "GIT",
-        "VBA",
-        "FLASK",
-        "MPGS API"
-      ]
-    }
+    "skills": [
+      {
+        "category": "Languages",
+        "items": "Python, JavaScript, TypeScript, SQL, VBA"
+      },
+      {
+        "category": "Web",
+        "items": "Vue.js, Nuxt.js, React, Next.js, Flask, HTML, CSS, REST APIs"
+      },
+      {
+        "category": "Mobile Development",
+        "items": "React Native, Capacitor, Flutter"
+      },
+      {
+        "category": "Data",
+        "items": "Power BI, SQL, SSRS, PostgreSQL, SQLite, MySQL, Pandas, NumPy"
+      },
+      {
+        "category": "Platforms",
+        "items": "Git, Microsoft 365, Linux, Windows Server, macOS, Docker, AWS"
+      },
+      {
+        "category": "Integrations",
+        "items": "Autodesk API, MPGS API, Ultimus BPM, Gemini API, OpenAI API, Ollama, Firebase, Supabase, PayPal API"
+      }
+    ]
   },
   "experiences": [
     {
-      "title": "JUNIOR DATA ANALYST/IT SUPPORT",
-      "company": "PROFESSIONAL OUTSOURCING SOLUTIONS LTD",
-      "address": "Chemin Vingt Pieds, Grand Baie, Mauritius",
-      "year": "Oct 2020 - Oct 2022",
+      "title": "Software Developer",
+      "company": "Trèfle Applications",
+      "location": "Remote · France",
+      "year": "Mar 2024 - Present",
       "description": [
-        "Developed SQL queries using SSMS to support internal reporting.",
-        "Created Table-Valued Functions (TVFs) to simplify and reuse SQL logic.",
-        "Designed automated workflows using Ultimus BPM Suite to streamline business processes.",
-        "Developed reports using SSRS for operational and analytical needs.",
-        "Collaborated with business users to gather and understand business requirements.",
-        "Improved problem-solving and analytical skills in IT support tasks."
-      ],
-      "line": "experience__line"
+        "Build and maintain Vue.js and Flask applications for ticket management and sales tracking, centralizing client workflows.",
+        "Develop Python automations and n8n workflows, integrating APIs to improve operational efficiency and production reliability.",
+        "Integrate business APIs securely, including a Python tool for managing client files through the Autodesk BIM 360 API.",
+        "Create SQL datasets and Power BI reports tailored to client reporting requirements.",
+        "Maintain secure, performant WordPress websites and develop Excel VBA tools that automate internal business processes."
+      ]
     },
     {
-      "title": "IT SUPPORT TECHNICIAN/SOFTWARE DEVELOPER",
-      "company": "APHELION SOLUTIONS LTD",
-      "address": "KL House, Riche Terre, Mauritius",
+      "title": "IT Support Technician / Software Developer",
+      "company": "Aphelion Solutions Ltd",
+      "location": "Riche Terre, Mauritius",
       "year": "Oct 2022 - Feb 2024",
       "description": [
-        "Managed servers(Linux and Windows) and IT devices for clients, ensuring stable operations and security.",
-        "Set up laptops, created and managed user accounts on servers.",
-        "Created and administered Office 365 accounts for users.",
-        "Analyzed and troubleshoot hardware and software issues across devices.",
-        "Managed telephone lines and provided technical setup for meetings.",
-        "Implemented a secure payment system (MPGS) in the client’s e-commerce website.",
-        "Developed SQL queries and scheduled automated jobs to execute them.",
-        "Build and deploy Power BI reports tailored to client requirements."
-      ],
-      "line": "experience__line"
+        "Administered Linux and Windows servers, Microsoft 365 accounts, user access, and client IT equipment.",
+        "Diagnosed hardware, software, telephone, and meeting-room issues to maintain reliable client operations.",
+        "Integrated Mastercard Payment Gateway Services (MPGS) into a client e-commerce platform with secure transaction handling.",
+        "Automated scheduled SQL jobs and delivered Power BI reports aligned with client requirements."
+      ]
     },
     {
-      "title": "SOFTWARE DEVELOPER",
-      "company": "Trèfle Applications",
-      "address": "16 bis quai de Stalingrad, 92100 Boulogne-Billancourt, France - Remote",
-      "year": "March 2024 - CURRENT",
+      "title": "Junior Data Analyst / IT Support",
+      "company": "Professional Outsourcing Solutions Ltd",
+      "location": "Grand Baie, Mauritius",
+      "year": "Oct 2020 - Oct 2022",
       "description": [
-        "Working with Flask and Vue.js frameworks for web development.",
-        "Developed a ticketing system and a commercial tool to manage sales activities.",
-        "Developed SQL queries to build Power BI reports to client requirements.",
-        "Created Python scripts to automate client tasks and improve efficiency.",
-        "APIs integration into systems and ensuring their secure usage.",
-        "Developed a BIM 360 file management tool using Python for a client.",
-        "Maintaining automation workflows to ensure reliability and performance."
-      ],
-      "line": "no__line"
-    }
-  ],
-  "certificates": [
-    {
-      "title": "Certificate in.........",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit..."
-    },
-    {
-      "title": "Certificate in.........",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit..."
-    },
-    {
-      "title": "Certificate in.........",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit..."
-    }
-  ],
-  "references": [
-    {
-      "name": "Mr. Damien",
-      "title": "Python Lecturer",
-      "linkedin": "http://www.linkedin.com"
+        "Developed reusable SQL Server queries and table-valued functions supporting operational reporting in SSRS.",
+        "Automated internal business workflows with Ultimus BPM Suite to streamline recurring processes.",
+        "Partnered with business users to translate reporting requirements and resolve technical and data-related issues."
+      ]
     }
   ],
   "languages": [
     "English",
     "French",
     "Urdu"
-  ],
-  "interests": [
-    {
-      "icon": "bx bx-bug",
-      "int": "AI"
-    },
-    {
-      "icon": "bx bx-code-alt",
-      "int": "Coding"
-    },
-    {
-      "icon": "bx bx-game",
-      "int": "Gaming"
-    },
-    {
-      "icon": "bx bx-headphone",
-      "int": "Music"
-    },
-    {
-      "icon": "bx bx-dumbbell",
-      "int": "Fitness"
-    },
-    {
-      "icon": "bx bxs-plane-alt",
-      "int": "Travel"
-    }
   ]
 }
